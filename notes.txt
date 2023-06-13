@@ -1,0 +1,30 @@
+//class Cam {
+//private:
+//    std::string name, url;
+//    VideoCapture cap;
+//public:
+//    Cam(std::string _name, std::string _url) {
+//        name = _name;
+//        url = _url;
+//        cap = VideoCapture(url, CAP_FFMPEG);
+//    }
+//    void operator()() {
+//        Mat frame;
+//
+//        if (!cap.isOpened()) {
+//            std::cout << "Cannot open RTSP stream" << std::endl;
+//        } else {
+//            std::cout << "Cam " << name << " created using url: " << url;
+//            while (true) {
+//                cap >> frame;
+//                imshow("RTSP stream", frame);
+//
+//                if (waitKey(1) == 27) {
+//                    break;
+//                }
+//            }
+//        }
+//        cap.release();
+//        destroyAllWindows();
+//    }
+//};
